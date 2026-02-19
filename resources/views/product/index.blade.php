@@ -29,64 +29,11 @@ $productos = [
 <head>
 <meta charset="UTF-8">
 <title>Tienda Virtual</title>
-<style>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #f3f3f3;
-}
-header {
-    background-color: #131921;
-    color: white;
-    padding: 15px 40px;
-    font-size: 22px;
-    font-weight: bold;
-}
-.container {
-    padding: 40px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
-}
-.card {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-    transition: 0.3s;
-}
-.card:hover {
-    transform: scale(1.03);
-}
-.card img {
-    width: 100%;
-}
-.price {
-    color: #B12704;
-    font-size: 20px;
-    font-weight: bold;
-}
-.btn {
-    background: #FFD814;
-    border: none;
-    padding: 10px;
-    width: 100%;
-    cursor: pointer;
-    font-weight: bold;
-    margin-top: 10px;
-}
-.btn:hover {
-    background: #F7CA00;
-}
-.agotado {
-    color: red;
-    font-weight: bold;
-}
-</style>
+<link rel="stylesheet" href="{{ asset('public/css/styles.css') }}">
 </head>
 <body>
 
-<header>Tienda Virtual</header>
+<header class="header">Tienda Virtual</header>
 
 <div class="container">
 <?php foreach($productos as $producto): ?>

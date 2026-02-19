@@ -1,0 +1,155 @@
+/* ==============================
+   RESET BÁSICO
+============================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+}
+
+/* ==============================
+   HEADER AMAZON STYLE
+============================== */
+.header {
+    background-color: #131921;
+    color: white;
+    padding: 15px 40px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* ==============================
+   GRID PRODUCTOS
+============================== */
+.container {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card img {
+    width: 100%;
+}
+
+.price {
+    color: #B12704;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.agotado {
+    color: red;
+    font-weight: bold;
+}
+
+.btn {
+    background: #FFD814;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #F7CA00;
+}
+
+/* ==============================
+   FORMULARIO
+============================== */
+.form-container {
+    width: 400px;
+    background: white;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.form-container label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.form-container input,
+.form-container textarea,
+.form-container select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* ==============================
+   DETALLE PRODUCTO
+============================== */
+.detail-container {
+    display: flex;
+    gap: 40px;
+    padding: 50px;
+    background: white;
+    margin: 50px;
+    border-radius: 10px;
+}
+
+.detail-container img {
+    width: 400px;
+}
+
+.detail-info {
+    flex: 1;
+}
+
+.detail-price {
+    color: #B12704;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.detail-estado {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* ==============================
+   RESPONSIVE
+============================== */
+@media (max-width: 768px) {
+    .detail-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .detail-container img {
+        width: 100%;
+    }
+
+    .form-container {
+        width: 90%;
+    }
+}
