@@ -23,6 +23,63 @@ body {
     font-weight: bold;
 }
 
+
+/* ==============================
+   NAVBAR
+============================== */
+.navbar {
+    background-color: #131921;
+    padding: 15px 40px;
+    color: white;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* ==============================
+   FOOTER
+============================== */
+.footer {
+    background-color: #232F3E;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/* ==============================
+   MAIN CONTENT
+============================== */
+.main-content {
+    min-height: 80vh;
+}
+
 /* ==============================
    GRID PRODUCTOS
 ============================== */
